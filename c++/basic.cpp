@@ -1,25 +1,38 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
-int main(){
-    int marks;
-    cin>>marks;
-    if (marks<25){
-        cout<<"F";
+/*
+Take the day no and print the corresponding day for 1 print Monday,
+for 2 print Tuesday and so on for 7 print Sunday.
+*/
+int main() {
+    int day;
+    cin >> day;
+    switch (day) {
+        case 1:
+            cout << "Monday";
+            break;
+        case 2:
+            cout << "Tuesday";
+            break;
+        case 3:
+            cout << "Wednesday";
+            break;
+        case 4:
+            cout << "Thursday";
+            break;
+        case 5:
+            cout << "Friday";
+            break;
+        case 6:
+            cout << "Saturday";
+            break;
+        case 7:
+            cout << "Sunday";
+            break;
+        default:
+            cout << "invalid day";
     }
-    if(marks>=25 && marks<=44){
-        cout<<"E";
-    }
-    if(marks>=44 && marks<=49){
-        cout<<"D";
-    }
-    if(marks>=50 && marks<=59){
-        cout<<"C";
-    }
-    if(marks>=60 && marks<79){
-        cout<<"B";
-    }
-    if(marks>=79 && marks<=100){
-        cout<<"A";
-    }
+
+    cout << "check";
     return 0;
 }
